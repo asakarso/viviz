@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+
+body, h1, h2, h3, h4, p, a, span, img, input, textarea {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Verdana, Arial;
+}
+
+h2, h3, h4 {
+    text-transform: uppercase;
+}
+
+h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 6px;
+}
+
+h1 {
+    font-size: 70px;
+    font-family: Arial;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+h4 {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+/* nav bar */
+
+.navigation {
+    background: linear-gradient(90deg,
+     rgba(217, 157, 191, 0.54) 13.85%, 
+     rgba(194, 153, 219, 0.55) 48.94%, 
+     rgba(157, 209, 222, 0.73) 86.28%);
+    height: 63px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 12;
+    padding: 6px 50px;
+}
+
+.navigation img {
+    margin-top: 8px;
+    height: 30px;
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav .bi-list {
+    display: none;
+}
+
+nav a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    margin-left: 35px;
+    display: inline-block;
+}
+
+nav a:hover {
+    opacity: 0.4;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+}
+
+/* main */
+
+main,
+aside {
+    overflow: auto;
+}
+
+main {
+    padding: 0 35px;
+    background: linear-gradient(90deg,
+     rgba(217, 157, 191, 0.54) 13.85%, 
+     rgba(194, 153, 219, 0.55) 48.94%, 
+     rgba(157, 209, 222, 0.73) 86.28%);
+}
+
+article {
+    padding-bottom: 55px;
+}
+
+/* profile */
+
+.group {
+    padding: 100px 30px;;
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 50%;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.group img {
+    border-radius: 40px;
+    width: 100%;
+}
+
+.profile-desc {
+    width: 50%;
+    flex-grow: 1;
+    float: left;
+    text-align: justify;
+    margin-left: 40px;
+    margin: 30px;
+}
+
+.profile-desc p {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 25px 0;
+}
+
+.socmed {
+    margin: 15px 0;
+    word-spacing: 30px;
+}
+
+.bi-twitter, .bi-instagram, .bi-youtube {
+    font-size: 35px;
+    color: black;
+    border-radius: 13px;
+}
+
+.bi-instagram:hover {
+    padding: 4px 8px;
+    color: white;
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+.bi-twitter:hover {
+    background: #1DA1F2;
+    color: white;
+    padding: 4px 8px;
+}
+
+.bi-youtube:hover {
+    background: #FF0000;
+    padding: 4px 8px;
+    color: white;
+}
+
+/* member */
+
+.profile-2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.profile-2 img {
+    width: 70%;
+    border-radius: 47px;
+    margin: 30px 0;
+}
+
+.profile-2 img:hover {
+    border-radius: 100%;
+}
+
+.members {
+    display: flex;
+}
+
+.member {
+    width: 30%;
+    flex-grow: 1;
+}
+
+.member p {
+    line-height: 30px;
+    font-family: 'Poppins', Arial;
+}
+
+/* discography */
+
+#disc {
+    margin: 45px;
+    padding: 0;
+}
+
+.disc-title {
+    text-align: center;
+}
+
+.disc-album {
+    text-align: center;
+    padding: 0 40px;
+}
+
+.image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.album {
+    width: 30%;
+    height: 100%;
+    margin: 0 40px;
+}
+
+.disc-album img {
+    width: 90%;
+    margin-top: 20px;
+}
+
+#disc .discs .cover {
+    width: 20%;
+}
+
+#disc .discs .cover:hover {
+    width: 30%;
+}
+
+.disc-album .desc {
+    font-size: 15px;
+    font-style: italic;
+    margin: 25px;
+}
+
+.disc-digital {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+
+.disc-song {
+    align-items: center;
+    width: 60%;
+}
+
+.bop-list {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.bop-list table {
+    margin: 25px auto;
+    padding: 0px 20px;
+    background-color: rgba(194, 153, 219, 0.267);
+    border-radius: 35px;
+}
+
+.bop-list table:hover, .mv iframe:hover, .listen:hover {
+    box-shadow: 0px 0px 17px 5px rgba(0, 0, 0, 0.493);
+}
+
+.bop-list td {
+    padding: 15px 25px;
+} 
+
+.listen {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: rgba(194, 153, 219, 0.267);
+    padding: 20px 0;
+    border-radius: 35px;
+}
+
+.spotify { 
+    width: 70%;
+    margin: 0 auto;
+}
+
+.bi-spotify {
+    margin: 0 10px;
+    font-size: 50px;
+    color: rgb(70, 240, 130);
+}
+
+.spotify a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.spotify a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.spotify a:active {
+    top: 5px;
+    left: 3px;
+    box-shadow: none;
+}
+
+.mv {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: auto 0;
+}
+
+.mv iframe {
+    text-align: center;
+    border-radius: 40px;
+    width: 80%;
+    margin: 30px 0 0 10px;
+}
+
+/* broadcast */
+
+#broadcast {
+    text-align: center;
+}
+
+.broadcast {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.broadcast .bc {
+    width: 50%;
+}
+
+.broadcast img {
+    width: 70%;
+    border-radius: 45px;
+    margin: 45px;
+}
+
+.broadcast img:hover {
+    box-shadow: 0px 0px 17px 5px rgba(0, 0, 0, 0.493);
+}
+
+/* contact */
+#contact {
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 10px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.my-profile img {
+    width: 15%;
+    border-radius: 40px;
+    margin: 30px;
+}
+
+.my-profile p {
+    line-height: 35px;
+    letter-spacing: 3px;    
+}
+
+/* my profile */
+
+aside img {
+    width: 200px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.493);
+}
+
+/* footer */
+footer {
+    background: linear-gradient(90deg,
+     rgba(217, 157, 191, 0.74) 13.85%, 
+     rgba(194, 153, 219, 0.78) 48.94%, 
+     rgba(157, 209, 222, 0.92) 86.28%);
+    height: 65px;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    margin: 0 auto;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 15px;
+}
+
+/* Responsive */
+
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+
+    .group, .disc-digital {
+        padding: 40px 30px;
+        flex-direction: column;
+    }
+
+    .profile-img, .profile-desc, .disc-song, .mv {
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile-img img {
+        width: 70%;
+    }
+
+    .disc-song {
+        margin-bottom: 80px;
+    }
+
+    .mv iframe {
+        width: 100%;
+    }
+
+    .broadcast {
+        margin-top: 30px;
+    }
+
+    .my-profile img {
+        width: 30%;
+    }
+}
+  
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+    
+    .members, .broadcast {
+        flex-direction: column;
+    }
+
+    .member, .broadcast .bc {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .disc-digital {
+        padding: 40px 0;
+        margin: 30px 0;
+    }
+
+    .bop-list table {
+        padding: 0;
+    }
+
+    .album {
+        width: 100%;
+    }
+
+    .disc-album img {
+        width: 90%;
+        margin-top: 20px;
+    }
+    
+    #disc .discs .cover {
+        display: none;
+    }
+
+    .spotify {
+        width: 100%;
+    }
+
+    .mv iframe {
+        height: 200px;
+    }
+}
+
+@media all and (max-width: 644px) {
+    nav ul {
+        padding-left: 5px;
+    }
+
+    nav a{
+        font-size: 80%;
+        margin-left: 10px;
+    }
+}    
+
+@media all and (max-width: 471px) {
+    nav a{
+        font-size: 70%;
+        margin-left: 5px;
+    }
+
+    #disc {
+        margin: 30px 0;
+    }
+}    
+
+@media all and (max-width: 421px) {
+
+    .navigation {
+        padding: 0 20px;
+    }
+    
+    nav a{
+        font-size: 50%;
+        margin-left: 2px;
+    }
+
+    .profile-desc p {
+        font-size: 70%;
+    }
+
+    main {
+        padding: 10px;
+    }
+}    
